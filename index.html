@@ -3,9 +3,20 @@
   <head>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script type="module" src="/script/aframe-gui.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
-    <a-scene gui-env>
+    <a-scene gui-env environment>
+      <a-assets>
+        <a-asset-item id="mapa" src="mapa_floripa.glb"></a-asset-item>
+      </a-assets>
+
+      <a-entity
+        gltf-model="#mapa"
+        position="1 0 -3"
+        rotation="0 90 0"
+      ></a-entity>
+
       <a-gui-flex-container
         flex-direction="column"
         justify-content="center"
