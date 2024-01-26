@@ -11,11 +11,47 @@
         <a-asset-item id="mapa" src="mapa_floripa.glb"></a-asset-item>
       </a-assets>
 
-      <a-entity
-        gltf-model="#mapa"
-        position="1 0 -3"
-        rotation="0 90 0"
-      ></a-entity>
+      <a-entity gltf-model="#mapa" position="3 0 -3"></a-entity>
+
+      <a-gui-flex-container
+        flex-direction="column"
+        position="0 1.7 -1"
+        panel-rounded="0.02"
+        rotation="0 0 0"
+        width="0.5"
+        height="0.45"
+        item-paddin="0.1"
+      >
+        <a-gui-flex-container
+          flex-direction="column"
+          justify-content="center"
+          align-items="normal"
+          width="0.5"
+          height="0.3"
+          panel-color="#FFFFFF"
+        >
+          <a-gui-label
+            width="0.5"
+            height="0.3"
+            value="Ola"
+            font-size="0.2"
+            background-color="#FFFFFF"
+            radius="0.2"
+          >
+          </a-gui-label>
+        </a-gui-flex-container>
+        <a-gui-button
+          id="btn-init"
+          width="0.5"
+          height="0.1"
+          value=">>>"
+          font-size="0.05"
+          toggle="true"
+          margin="-0.05 0 0 0"
+          radius="0.2"
+        >
+        </a-gui-button>
+      </a-gui-flex-container>
 
       <a-gui-flex-container
         flex-direction="column"
@@ -105,7 +141,7 @@
         </a-gui-button>
       </a-gui-flex-container>
 
-      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder
         position="1 0.75 -3"
@@ -114,12 +150,12 @@
         color="#FFC65D"
       ></a-cylinder>
       <a-plane
-        position="0 0 -4"
+        position="0 0.01 -4"
         rotation="-90 0 0"
         width="4"
         height="4"
         color="#7BC8A4"
-      ></a-plane> -->
+      ></a-plane>
       <a-sky color="#ECECEC"></a-sky>
 
       <!-- Mouse cursor so we can click on the scene with mouse or touch. -->
