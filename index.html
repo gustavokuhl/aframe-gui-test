@@ -265,7 +265,7 @@
 
       window.onload = function () {
         controls = new initControls()
-        // setValue()
+        setValue()
         var gui = new dat.GUI()
         gui.add(controls, "value").onChange(setValue)
         gui.addColor(controls, "fontColor").onChange(setValue)
